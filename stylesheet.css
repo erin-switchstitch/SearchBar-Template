@@ -24,8 +24,12 @@ header {
 header a {
     width: 20%;
     height: 50%;
+    
+    display: flex;
     justify-self: center;
     align-self: center;
+    align-items: center;
+    justify-content: center;
     border: 2px dotted black;
     background-color: grey;    
 }
@@ -52,9 +56,20 @@ main {
     background-color: cadetblue;
 }
 
+.subHeaderLeft {
+    position: fixed;
+    top: 10vh;
+    height: 10vh;
+    width: 22.5vw;
+    z-index: 10;
+    background-color: cadetblue;
+    border-right: 1px dotted black;
+
+}
+
 .selectBox{
-    animation-duration: 1000ms;
-    transition-duration: 1000ms;
+    /* animation-duration: 1000ms;
+    transition-duration: 1000ms; */
 
 }
 
@@ -66,7 +81,7 @@ main {
     width:50vw;
     overflow: hidden;
     position: fixed;
-    margin-left: -50vw;
+    margin-left: -40vw;
     margin-top: 2.5vh;
     /* right: 450px; */
 }
@@ -80,10 +95,11 @@ main {
 }
 
 h1{
-    
+    display: flex;
+    position:absolute;
+    z-index: 11;
     width: 100%;
-    padding-left: 32vw;
-    position: absolute;
+
     justify-content: space-around;
     align-content: space-around;
     
